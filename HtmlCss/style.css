@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  /* border: 1px solid brown; */
+  display: flex;
+  height: 100vh;
+  /* padding: 10px; */
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+.container {
+  width: 650px;
+  height: 450px;
+  background: white;
+  padding: 20px;
+}
+.title {
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.user_details {
+  display: flex;
+  margin: 12px 0 20px 0;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.input_details {
+  margin-bottom: 15px;
+  width: 300px;
+}
+.input_details input {
+  height: 35px;
+  width: 100%;
+  padding-left: 15px;
+  border-radius: 5px;
+}
+.details {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+.gender-details .gender_title {
+  font-size: 20px;
+}
+form .gender-details .category {
+  /* border: 1px solid brown; */
+  display: flex;
+  width: 100%;
+  /* background: red; */
+  margin: 10px 0;
+  justify-content: space-between;
+}
+.category label {
+  display: flex;
+  align-items: center;
+  margin-right: 100px;
+}
+button {
+  width: 600px;
+  height: 30px;
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
