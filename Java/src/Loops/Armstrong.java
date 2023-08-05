@@ -8,17 +8,20 @@ public class Armstrong {
 		Scanner sc = new Scanner(System.in);
 		System.out.print("Enter the number:");
 		int num = sc.nextInt();
+		int temp = num,r;
+		int digit = num;
 		while (num != 0) {
 			num = num / 10;
 			count++;
 		}
 //		System.out.println(count);
-		while (num != 0) {
-			num = num % 10;
-			sum += Math.pow(num, count);
-			num = num / 10;
+//		System.out.println(num);
+		while (digit  != 0) {
+			r = digit % 10;
+			sum += Math.pow(r, count);
+			digit = digit / 10;
 		}
-		if(num==sum)
+		if(temp==sum)
 		{
 			System.out.println("Armstrong Number");
 		}
