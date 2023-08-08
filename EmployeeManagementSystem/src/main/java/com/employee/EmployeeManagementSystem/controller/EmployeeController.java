@@ -1,4 +1,4 @@
-package com.employee.EmployeeManagementSystem.Controller;
+package com.employee.EmployeeManagementSystem.controller;
 
 import java.util.List;
 
@@ -14,14 +14,15 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.employee.EmployeeManagementSystem.Entity.Employee;
-import com.employee.EmployeeManagementSystem.Service.EmployeeServiceImpl;
+import com.employee.EmployeeManagementSystem.entity.Employee;
+import com.employee.EmployeeManagementSystem.service.EmployeeService;
+import com.employee.EmployeeManagementSystem.service.EmployeeServiceImpl;
 
 @RestController
 public class EmployeeController {
 
 	@Autowired
-	private EmployeeServiceImpl employeeServiceImpl;
+	private EmployeeService employeeServiceImpl;
 
 	@PostMapping("/saveEmployee")
 	public ResponseEntity<?> saveEmployee(@RequestBody Employee employee) {
